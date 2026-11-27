@@ -2,24 +2,25 @@
 
 Windows desktop app for HSK study.
 
-## Latest release — 4.3.3
+## Latest release — 4.3.4
 
-Download: https://github.com/j1s4nn/25chinese/releases/latest/download/25Chinese-Setup-4.3.3.exe
+Download: https://github.com/j1s4nn/25chinese/releases/latest/download/25Chinese-Setup-4.3.4.exe
 
-SHA-256: `7d6c98b1b923b1789fb0cf1c6064f2f28fb67d024d999781afc0f1aaa233119c`
-Size: 98,482,397 bytes (93.92 MB)
+SHA-256: `aa1727f0ddccb48cac32c3a5d8cf3c396cc30d8bad757ac46a7be562be10507e`
+Size: 98,482,392 bytes (93.92 MB)
 
-### What changed in 4.3.3
+### What changed in 4.3.4
 
-- The weekly AI paper is now a real exam maker. Choose 0-20 fill-in-the-blank, 0-10 short reply, and optionally one 4-20 turn AI dialogue or an 80+ character writing task.
-- Dialogue and writing model answers stay sealed after submit. Revealing them costs 5 requests once; a retry is free.
-- Fixed the AI explainer returning a fragment instead of JSON, so explanations now load as real AI output.
-- Explain keeps punctuation in the pinyin line, colours every unit and bolds grammar, verbs, adjectives and adverbs.
-- Meaning table merges mono-, di-, tri- and tetra-character units plus set phrases and proverbs (你今天是不是有点紧张呀 → 你 / 今天 / 是不是 / 有点 / 紧张 / 呀).
-- No literal `**` and no "meaning unavailable" placeholders anywhere in explanations.
-- The assistant is now a professional Markdown editor: compact section labels, a bordered structure box, and numbered examples as three stacked Chinese / pinyin / English lines in matching colour.
-- The per-row Note button verifies the unit with one request and saves it to the permanent, deduplicated "new collection characters" notebook note.
+- New-user exam-day fix: a fresh account gets a short HSK 1 starter paper instead of being told to learn cards while cards are paused.
+- Free-tier AI explanation fix: the free chain now uses Qwen 3.7 Flash with a 2,500-token cap, so free users get the full AI explanation instead of a truncated offline glossary. GLM remains paid-only.
+- Free Smart Video stays at 10 minutes per day (premium 2 hours).
+- Carries the 4.3.3 weekly exam maker, sealed 5-request model-answer reveal, punctuation-aware pinyin, unit meaning table, grammar patterns, 1-request Note save and professional Markdown assistant.
+- Clean-install and 200-user/1,000-request load audit: 0 failed requests, health p95 3 ms, accepted AI p95 943 ms, peak RSS 160 MB; 800 graceful busy responses at an instantaneous 200-user burst.
 
-Older installers stay on the Releases page for rollback. Every release ships the installer and a checksum file so you can verify the download before installing. The app updates itself from the signed update feed.
+Free accounts get the free daily mission, 10 AI requests per week and 10 minutes of Smart Video per day. Extra study, extra grammar, extra correction exams and longer video tiers are Premium.
+
+The installer is not code-signed yet, so Windows may show an "Unknown publisher" SmartScreen prompt once. The app updates itself from the signed update feed.
+
+Older installers stay on the Releases page for rollback. Every release ships a checksum file so you can verify the download before installing.
 
 Source code is not published in this repository.
