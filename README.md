@@ -6,8 +6,8 @@ Windows desktop app for HSK study.
 
 Download: https://github.com/j1s4nn/25chinese/releases/latest/download/25Chinese-Setup-4.3.3.exe
 
-SHA-256: `4308f81fe6e9eae815d8e8c2860e1ce69521dcbf5c1885306d71d255d2acb462`
-Size: 98,480,813 bytes (93.92 MB)
+SHA-256: `4e23947850094f1aefa198d78af4746d6599e2dafca1473df715e825d097ac7d`
+Size: 98,481,123 bytes (93.92 MB)
 
 ### What changed in 4.3.3
 
